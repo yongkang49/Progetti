@@ -1,0 +1,23 @@
+body {
+    background-image: url("https://i.ytimg.com/vi/NVCpr9yGv2U/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.textBlock {
+    border: 2px solid black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 40%;
+    margin-right: 5%;
+    background-color: gray;
+    padding-top: 5%;
+    padding-right: 30%;
+    padding-bottom: 35%;
+    padding-left: 10%;
+    opacity: 0.8;
+}
+.text{
+    margin-top: -25%;
+    margin-left: -50%;
+}
