@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body style="background-color: rgb(255, 192, 203)">
+    <header>
+        <h1>原神</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Main</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Char</a></li>
+                <li><a href="#">World</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+<script>
+    const navLinks = document.querySelectorAll('nav li a');
+
+navLinks.forEach((link, index) => {
+  link.addEventListener('mouseenter', () => {
+    const underline = document.querySelector('nav ul::after');
+    underline.style.transform = `translateX(${2 * index * 'ch'})`;
+  });
+});
+</script>
+</html>
