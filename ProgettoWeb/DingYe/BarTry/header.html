@@ -19,14 +19,4 @@
         </nav>
     </header>
 </body>
-<script>
-    const navLinks = document.querySelectorAll('nav li a');
-
-navLinks.forEach((link, index) => {
-  link.addEventListener('mouseenter', () => {
-    const underline = document.querySelector('nav ul::after');
-    underline.style.transform = `translateX(${2 * index * 'ch'})`;
-  });
-});
-</script>
 </html>
