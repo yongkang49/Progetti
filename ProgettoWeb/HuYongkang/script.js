@@ -1,7 +1,5 @@
-document.querySelector("...").textContent = "...";
-let qiDong = false;
-if(!qiDOng)
-{
-document.getElementById("start").hidden;
-qiDong = true;
-}
+function showContent() {
+    let temp = document.getElementsByTagName("template")[0];
+    let clon = temp.content.cloneNode(true);
+    document.body.appendChild(clon);
+  }
