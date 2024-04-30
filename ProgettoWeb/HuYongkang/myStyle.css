@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://i.ytimg.com/vi/NVCpr9yGv2U/maxresdefault.jpg");
+    background-image: url("https://cdn2.unrealengine.com/genshin-impact-4-1920x1080-30df09f89d45.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -9,21 +9,20 @@ body {
     padding: 8px 16px;
     text-decoration: none;
   }
-  .pagination a:hover:not(.active) {background-color: #ddd;}
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
 .textBlock {
+    position: fixed;
     border: 2px solid black;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 40%;
-    margin-right: 5%;
+    top: 5%;
+    bottom: 5%;
+    left: 40%;
+    right: 5%;
     background-color: gray;
-    padding-top: 5%;
-    padding-right: 30%;
-    padding-bottom: 35%;
-    padding-left: 10%;
     opacity: 0.8;
 }
-.text{
-    margin-top: -25%;
-    margin-left: -50%;
-}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
