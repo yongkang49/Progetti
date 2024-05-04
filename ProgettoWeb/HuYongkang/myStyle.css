@@ -3,13 +3,24 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
 }
-.pagination a {
+.paginationLeft {
     color: black;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
+    position: absolute;
+    top: 50%;
   }
-.pagination a:hover:not(.active) {
+.paginationRight {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+  }
+a:hover:not(.active) {
     background-color: #ddd;
 }
 .textBlock {
