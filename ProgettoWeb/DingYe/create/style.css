@@ -1,0 +1,12 @@
+.borderDiv
+{
+    border: 5px;
+    border-color: thistle;
+    border-style: solid;
+}
+.borderP
+{
+    border: 5px;
+    border-color: violet;
+    border-style: solid;
+}
