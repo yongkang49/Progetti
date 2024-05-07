@@ -1,0 +1,8 @@
+.borderDiv{
+    border: solid 3px;
+    border-color: black;
+}
+.borderP{
+    border: solid 3px;
+    border-color: rebeccapurple;
+}
