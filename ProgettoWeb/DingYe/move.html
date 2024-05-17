@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button to Move Image Smoothly</title>
+    <style>
+        .moving-image {
+            position: absolute;
+            width: 5%;
+            top: 50px;
+            right: 0;
+            transition: right 0.5s ease; /* velocità di movimento */
+        }
+    </style>
+</head>
+<body>
+    <img src="arlecchino.png" alt="Moving Image" class="moving-image" id="movingImage">
+
+    <button id="moveButton">Move Image</button>
+
+    <script>
+        const moveButton = document.getElementById('moveButton');
+        const movingImage = document.getElementById('movingImage');
+
+        moveButton.addEventListener('click', () => {
+            const containerWidth = window.innerWidth; // larghezza del viewport
+            const imageWidth = movingImage.offsetWidth;
+            const targetPosition = (containerWidth - imageWidth) / 2;
+            //calcolo meta schermo
+            // posizione da arrivare
+            movingImage.style.right = targetPosition + 'px';
+        });
+    </script>
+</body>
+</html>
