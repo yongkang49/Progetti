@@ -3,6 +3,12 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+.mySlides{
+  display: none;
+  z-index: 1;
+  width: 1900px;
+  height: 960px;
+}
 .paginationLeft {
     color: black;
     float: left;
