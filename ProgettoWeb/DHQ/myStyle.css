@@ -1,48 +1,26 @@
 body {
-    background-image: url("https://cdn2.unrealengine.com/genshin-impact-4-1920x1080-30df09f89d45.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .menu{
-    position: static;
     opacity: 0.7;
-    background-color: #a9aaa7;
+    background-color: #79b10b;
     text-align: center;
     padding: 20px;
 }
 a {
     color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 a:hover:not(.active) {
-    background-color: #ddd;
+    border-top: 3px blue solid;
+    background-color: #000000;
 }
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 1s;
-}
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+img{
+    display: none;
 }
