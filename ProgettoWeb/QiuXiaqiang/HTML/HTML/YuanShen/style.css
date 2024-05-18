@@ -2,21 +2,16 @@ body{
     background-image: url(https://patchwiki.biligame.com/images/ys/e/ef/jezmxgsxrzx9834ew94jyo431b422m5.png);
     background-repeat: "no-repeat";
     background-size:100%;
+    background-image:url(patchwiki.biligame.com/images/ys/0/00/plmqraadtr82sraud63gt035f54ps3k.png);
+    background-image:url(https://patchwiki.biligame.com/images/ys/2/23/cubysky8ui6clyn9nqwnyr033cdw7ov.png);
+    background-image:url(https://patchwiki.biligame.com/images/ys/0/01/eafh8clrwwoc4jladmcnhbnix63flby.png);
+    
+
+
+    background-image:url(https://patchwiki.biligame.com/images/ys/8/8e/hyv4sdbd9ye8bczvmtj4kvbv2js5ekt.png);
+    background-image:url(https://patchwiki.biligame.com/images/ys/thumb/6/69/q64b56iktx7zyxlto73cutf4ybkeyq9.png/270px-%E5%9C%B0%E7%90%86%E5%BF%97-%E7%92%83%E6%9C%88-%E7%80%9A%E6%B5%B7%E5%AD%A4%E4%BA%91.png);
+    background-image:url(https://patchwiki.biligame.com/images/ys/f/ff/1eqme5u21pq98rw6cbug77q2ha5paqf.png);
+    background-image:url(https://patchwiki.biligame.com/images/ys/e/ec/p3znqjdgpq9535x3zsrzq9gfuplvil1.png);
+
+
 }
-.paginationLeft {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    position: absolute;
-    top: 50%;
-  }
-.paginationRight {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    position: absolute;
-    top: 50%;
-    right: 0%;
-  }
