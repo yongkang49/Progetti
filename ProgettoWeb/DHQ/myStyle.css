@@ -4,23 +4,30 @@ body {
 }
 .menu{
     opacity: 0.7;
-    background-color: #79b10b;
+    background-color: #cafa69;
     text-align: center;
     padding: 20px;
 }
-a {
-    color: white;
+.menu a {
+    color: rgb(233, 52, 52);
+    text-decoration: none;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
+    font-size: 45px;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 a:hover:not(.active) {
-    border-top: 3px blue solid;
+    border-bottom: 5px rgb(73, 216, 195) solid;
     background-color: #000000;
+    color: white;
 }
 img{
-    display: none;
+    position: absolute;
+    left: 40%;
+    top: 12%;
+    width: 20%;
+    visibility: hidden;
+    z-index: 1;
 }

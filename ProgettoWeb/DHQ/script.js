@@ -1,3 +1,4 @@
+//array delle immagini di sfondo
 const images = [
     'url("https://cdn2.unrealengine.com/genshin-impact-4-1920x1080-30df09f89d45.jpg")',
     'url("https://img.yanlutong.com/uploadimg/ico/2020/0916/1600225873641956.jpg")',
@@ -5,22 +6,32 @@ const images = [
     'url("https://p5.itc.cn/images01/20210115/49cd56306f91442bbac66390925b7a83.jpeg")',
     'url("https://cdn2.unrealengine.com/genshin-impact-4-1920x1080-30df09f89d45.jpg")',
 ]
-let i = 0;
+//blocco cambio automatico dell'immagine di sfondo
+let index = 0;
 function changeBackgroundImage() {
-    document.body.style.backgroundImage = images[i];
-    i = (i + 1) % images.length;
+    document.body.style.backgroundImage = images[index];
+    index = (index + 1) % images.length;
 }
 setInterval(changeBackgroundImage, 5000);
 changeBackgroundImage();
+//fine blocco cambio automatico dell'immagine di sfondo
 
-const pagine = ["Mondstadt", "Liyue", "Inazuma", "Sumeru", "Fontaine"];
-i = 0;
-function PreShow(i)
+//blocco previews delle pagine
+const linkPage = document.body.querySelectorAll("a");
+const PreShow = function(event)
 {
-    document.getElementById("a" + pagine[i]).addEventListener("mouseenter", function(){
-        document.getElementById(pagine[i].toString()).style.display = "block";
-        document.getElementById("a" + pagine[i]).addEventListener("mouseleave", function(){
-            document.getElementById(pagine[i]).style.display = "none";
-        });
-    });
+    document.getElementById("a" + event.target.id).style.visibility = "visible";
 }
+const ClosePreShow = function(event)
+{
+    document.getElementById("a" + event.target.id).style.visibility = "hidden";
+}
+for(let i = 0; i < linkPage.length; i++)
+{
+    linkPage[i].addEventListener("mouseenter", PreShow);
+}
+for(let i = 0; i < linkPage.length; i++)
+{
+    linkPage[i].addEventListener("mouseleave", ClosePreShow)
+}
+//fine blocco previews delle pagine
