@@ -5,7 +5,9 @@ body {
     background-image: url(https://patchwiki.biligame.com/images/ys/d/d8/4e4o6crrcz284j1d3fbmwe52szl3exh.png);
     background-size: cover;
 }
-
+html:hover{
+    cursor: url("../Img/cursor.png"), auto;
+}
 header {
     /*Testa del sito web per mettere esplora Liyue in alto alineato*/
     display: flex;

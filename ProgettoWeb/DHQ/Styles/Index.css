@@ -2,6 +2,9 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
+html:hover{
+    cursor: url("../Img/cursor.png"), auto;
+}
 .menu{
     opacity: 0.7;
     background-color: #cafa69;

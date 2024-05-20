@@ -1,11 +1,11 @@
 //array delle immagini di sfondo
 const images = [
-    'url("https://cdn2.unrealengine.com/genshin-impact-4-1920x1080-30df09f89d45.jpg")',
-    'url("https://img.yanlutong.com/uploadimg/ico/2020/0916/1600225873641956.jpg")',
-    'url("https://cdn2.unrealengine.com/image-2-3840x2160-75c677dd1705.jpg")',
-    'url("https://p5.itc.cn/images01/20210115/49cd56306f91442bbac66390925b7a83.jpeg")',
-    'url("https://cdn2.unrealengine.com/genshin-impact-4-1920x1080-30df09f89d45.jpg")',
-]
+    'url("Img/IndexBackImg/back1.jpg")',
+    'url("Img/IndexBackImg/back2.jpg")',
+    'url("Img/IndexBackImg/back3.jpg")',
+    'url("Img/IndexBackImg/back4.jpg")',
+    'url("Img/IndexBackImg/back5.jpg")',
+];
 //blocco cambio automatico dell'immagine di sfondo
 let index = 0;
 function changeBackgroundImage() {
@@ -34,6 +34,9 @@ for(let i = 0; i < linkPage.length; i++)
 {
     linkPage[i].addEventListener("mouseleave", ClosePreShow)
 }
+//fine blocco previews delle pagine
+
+//blocco per video home page
 const video = document.getElementById('myVideo');
 video.addEventListener('ended', () => {
     const videoElement = document.getElementById('myVideo');
@@ -43,3 +46,4 @@ video.addEventListener('ended', () => {
     videoContainer.parentNode.removeChild(videoContainer);
     }, 1000);
 });
+//fine blocco per video home page
