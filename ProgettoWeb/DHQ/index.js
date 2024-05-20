@@ -34,13 +34,3 @@ for(let i = 0; i < linkPage.length; i++)
 {
     linkPage[i].addEventListener("mouseleave", ClosePreShow)
 }
-//fine blocco previews delle pagine
-/*
-//blocco per vedere solo immagine di sfondo
-document.querySelector("body").addEventListener("mousedown", function(){
-    document.body.querySelector(".menu").style.visibility = "hidden";
-});
-document.querySelector("body").addEventListener("mouseup", function(){
-    document.body.querySelector(".menu").style.visibility = "visible";
-});
-//fine blocco per vedere solo immagine di sfondo*/
