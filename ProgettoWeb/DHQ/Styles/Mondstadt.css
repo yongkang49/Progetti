@@ -1,0 +1,40 @@
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.mySlides{
+    display: none;
+    z-index: 1;
+    width: 1900px;
+    height: 960px;
+}
+.paginationLeft {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+}
+.paginationRight {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+}
+span:hover:not(.active) {
+    background-color: #ddd;
+}
+.textBlock {
+    position: fixed;
+    border: 2px solid black;
+    top: 5%;
+    bottom: 5%;
+    left: 40%;
+    right: 5%;
+    background-color: gray;
+    opacity: 0.8;
+}

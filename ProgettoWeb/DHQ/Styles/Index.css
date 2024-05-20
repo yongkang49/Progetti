@@ -1,12 +1,13 @@
-body {
+.backImg {
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .menu{
-    opacity: 0.7;
+    opacity: 0.9;
     background-color: #cafa69;
     text-align: center;
     padding: 20px;
+    border-top: black 10px solid;
 }
 .menu a {
     color: rgb(233, 52, 52);
@@ -18,12 +19,12 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-a:hover:not(.active) {
+.menu a:hover:not(.active) {
     border-bottom: 5px rgb(73, 216, 195) solid;
     background-color: #000000;
     color: white;
 }
-img{
+.img{
     position: absolute;
     left: 40%;
     top: 12%;

@@ -9,7 +9,7 @@ const images = [
 //blocco cambio automatico dell'immagine di sfondo
 let index = 0;
 function changeBackgroundImage() {
-    document.body.style.backgroundImage = images[index];
+    document.querySelector(".backImg").style.backgroundImage = images[index];
     index = (index + 1) % images.length;
 }
 setInterval(changeBackgroundImage, 5000);
@@ -17,7 +17,7 @@ changeBackgroundImage();
 //fine blocco cambio automatico dell'immagine di sfondo
 
 //blocco previews delle pagine
-const linkPage = document.body.querySelectorAll("a");
+const linkPage = document.body.querySelectorAll(".menu a");
 const PreShow = function(event)
 {
     document.getElementById("a" + event.target.id).style.visibility = "visible";
@@ -35,3 +35,12 @@ for(let i = 0; i < linkPage.length; i++)
     linkPage[i].addEventListener("mouseleave", ClosePreShow)
 }
 //fine blocco previews delle pagine
+/*
+//blocco per vedere solo immagine di sfondo
+document.querySelector("body").addEventListener("mousedown", function(){
+    document.body.querySelector(".menu").style.visibility = "hidden";
+});
+document.querySelector("body").addEventListener("mouseup", function(){
+    document.body.querySelector(".menu").style.visibility = "visible";
+});
+//fine blocco per vedere solo immagine di sfondo*/
