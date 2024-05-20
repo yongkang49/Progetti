@@ -1,0 +1,138 @@
+/*stile del file*/
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*stile del logo*/
+.logo{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 1;
+    width: 8%;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.logo:active
+{
+    transform: scale(1.2);
+}
+
+/*video di sotto fondo*/
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*full screen play*/
+    z-index: -1;
+}
+
+/*sottofondo del wish*/
+.wishBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*full screen play*/
+    z-index: 10;
+}
+
+/*video dell'animazio dei pull*/
+.pullAni {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*full screen play*/
+    z-index: 10;
+}
+
+/*posizione del banner*/
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*center position*/
+    z-index: 2;
+    width: 50%;
+    height: auto;
+}
+
+/*bottoni per il pull*/
+.buttons {
+    position: fixed;
+    bottom: 20px; /*posizione a basso*/
+    right: -5%; /*posizione a destra*/
+    z-index: 3;
+}
+.pullButton {
+    width: 40%; 
+    height: auto;
+    margin: 3px;
+    transition: transform 0.2s;
+}
+
+.pullButton:active {
+    transform: scale(1.1); /*ingrandimento del 10% al click */
+}
+
+/*pulsante skip*/
+.skip {
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    z-index: 11;
+}
+
+.skip:active {
+    transform: scale(1.1); 
+}
+
+/*imMagini wish per dopo il movimento*/
+.wishImage {
+    position: absolute;
+    width: 8%;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%); /*immagine a metà schermo*/
+    right: 0; /*foto fuori dallo schermo quando inizia */
+    transition: right 0.8s ease, transform 0.2s ease; /* velocita delle animazioni*/
+    z-index: 999;
+}
+
+.wishImage:hover {
+    transform: translateY(-50%) scale(1.15); 
+}
+
+/*bottone finish*/
+
+.finish {
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    z-index: 20;
+}
+
+.finish:active {
+    transform: scale(1.1); 
+}
+
+/*number pity*/
+.PITYcontainer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.PITYcontainer img {
+    display: inline-block; /*immagini in sequenza*/
+    margin-right: 0; /*distanza tra le immagini*/
+}
