@@ -12,7 +12,7 @@ function changeBackgroundImage() {
     document.querySelector(".backImg").style.backgroundImage = images[index];
     index = (index + 1) % images.length;
 }
-setInterval(changeBackgroundImage, 5000);
+setInterval(changeBackgroundImage, 3000);
 changeBackgroundImage();
 //fine blocco cambio automatico dell'immagine di sfondo
 
@@ -34,3 +34,12 @@ for(let i = 0; i < linkPage.length; i++)
 {
     linkPage[i].addEventListener("mouseleave", ClosePreShow)
 }
+const video = document.getElementById('myVideo');
+video.addEventListener('ended', () => {
+    const videoElement = document.getElementById('myVideo');
+    videoElement.style.opacity = 0;
+    setTimeout(() => {
+    const videoContainer = document.getElementById('video-container');
+    videoContainer.parentNode.removeChild(videoContainer);
+    }, 1000);
+});
