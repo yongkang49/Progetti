@@ -6,6 +6,8 @@ backV.autoplay = true;
 backV.loop = true;
 backV.classList.add("background");
 document.body.appendChild(backV);
+backV.load();
+console.log("video add");
 //var char
 var up5 = "8";
 var up4 = ["36", "29", "3"];
