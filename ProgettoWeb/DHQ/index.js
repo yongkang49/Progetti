@@ -35,3 +35,14 @@ for(let i = 0; i < linkPage.length; i++)
     linkPage[i].addEventListener("mouseleave", ClosePreShow)
 }
 //fine blocco previews delle pagine
+
+//GET ELEMENT BY LOCAL STORAGE
+//const par = document.body.querySelector("p");
+//par.textContent = localStorage.getItem("username") + "   " + localStorage.getItem("password");
+
+document.body.querySelector("#submit").addEventListener("click", function(){
+    const username = document.getElementById("username").textContent;
+    const password = document.getElementById("pwd").textContent;
+    localStorage.setItem("username", username);
+    localStorage.setItem("password", password);
+});

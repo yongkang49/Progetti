@@ -1,5 +1,5 @@
 // Funzione che inizializza i gestori degli eventi
-function initializeEventHandlers() {
+function finestra() {
     // Seleziona tutti gli elementi con la variabile  all'interno di .main-content
     const variabile = document.querySelectorAll('.main-content .item');
 
@@ -90,4 +90,4 @@ function initializeEventHandlers() {
 }
 
 // Aggiunge un evento che si attiva quando il documento è completamente caricato
-document.addEventListener('DOMContentLoaded', initializeEventHandlers);
+document.addEventListener('DOMContentLoaded', finestra);
