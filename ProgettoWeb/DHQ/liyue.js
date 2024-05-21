@@ -1,8 +1,7 @@
 // Funzione che inizializza i gestori degli eventi
-function initializeEventHandlers() {
+function finestrino() {
     // Seleziona tutti gli elementi con la variabile  all'interno di .main-content
     const variabile = document.querySelectorAll('.main-content .item');
-
     // Per ogni elemento trovato, aggiunge un evento
     variabile.forEach(item => {
         item.addEventListener('click', () => {
@@ -90,4 +89,4 @@ function initializeEventHandlers() {
 }
 
 // Aggiunge un evento che si attiva quando il documento è completamente caricato
-document.addEventListener('DOMContentLoaded', initializeEventHandlers);
+document.addEventListener('DOMContentLoaded', finestrino);
