@@ -2,7 +2,6 @@
 function finestra() {
     // Seleziona tutti gli elementi con la variabile  all'interno di .main-content
     const variabile = document.querySelectorAll('.main-content .item');
-
     // Per ogni elemento trovato, aggiunge un evento
     variabile.forEach(item => {
         item.addEventListener('click', () => {
@@ -11,7 +10,6 @@ function finestra() {
             const descrizione = item.dataset.description;
             const image = item.querySelector('img').src;
             const immagineNuove = item.dataset.image;
-
             // Apre una nuova finestra per visualizzare il personaggio
             const newWindow = window.open('', 'Finestra descrizione', 'width=500,height=350');
             // Scrive l'HTML nella nuova finestra con il nome, la descrizione e le immagini del personaggio
