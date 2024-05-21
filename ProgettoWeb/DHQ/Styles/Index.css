@@ -2,9 +2,6 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
-html:hover{
-    cursor: url("../Img/cursor.png"), auto;
-}
 .menu{
     opacity: 0.7;
     background-color: #cafa69;
@@ -35,22 +32,3 @@ html:hover{
     visibility: hidden;
     z-index: 1;
 }
-#video-container {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-
-  #myVideo {
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 100%; 
-    height: auto;  
-    object-fit: cover; 
-    transition: opacity 1s ease-out; 
-  }

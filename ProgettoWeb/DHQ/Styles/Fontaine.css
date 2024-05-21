@@ -5,9 +5,7 @@ body {
     background-image: url(https://patchwiki.biligame.com/images/ys/0/01/eafh8clrwwoc4jladmcnhbnix63flby.png);
     background-size: cover;
 }
-html:hover{
-    cursor: url("../Img/cursor.png"), auto;
-}
+
 header {
     /*Testa del sito web per mettere esplora fengdan in alto alineato*/
     display: flex;

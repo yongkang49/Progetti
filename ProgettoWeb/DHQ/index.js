@@ -35,15 +35,3 @@ for(let i = 0; i < linkPage.length; i++)
     linkPage[i].addEventListener("mouseleave", ClosePreShow)
 }
 //fine blocco previews delle pagine
-
-//blocco per video home page
-const video = document.getElementById('myVideo');
-video.addEventListener('ended', () => {
-    const videoElement = document.getElementById('myVideo');
-    videoElement.style.opacity = 0;
-    setTimeout(() => {
-    const videoContainer = document.getElementById('video-container');
-    videoContainer.parentNode.removeChild(videoContainer);
-    }, 1000);
-});
-//fine blocco per video home page

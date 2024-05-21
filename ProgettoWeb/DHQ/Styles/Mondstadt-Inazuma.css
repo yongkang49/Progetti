@@ -5,9 +5,6 @@ body{
 p, h2{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-html:hover{
-    cursor: url("../Img/cursor.png"), auto;
-}
 .paginationLeft {
     color: black;
     float: left;

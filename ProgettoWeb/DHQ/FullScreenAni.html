@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video</title>
+  <link rel="icon" type="image/x-icon" href="Img/icon.png">
+  <link rel ="stylesheet" href ="Styles/Cursor.css">
+  <style>
+    #video-container {
+      position: fixed; 
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    html:hover{
+    cursor: url("../Img/cursor.png"), auto;
+}
+    #myVideo {
+      position: absolute; 
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      width: 100%; 
+      height: auto;  
+      object-fit: cover; 
+      transition: opacity 1s ease-out; 
+    }
+  </style>
+</head>
+<body style="background-color: aqua;">
+  <div id="video-container">
+    <video id="myVideo" autoplay muted src="Img/ys.mp4"></video>
+  </div>
+
+  <script>
+    const video = document.getElementById('myVideo');
+
+    video.addEventListener('ended', () => {
+      const videoElement = document.getElementById('myVideo');
+      videoElement.style.opacity = 0;
+
+      setTimeout(() => {
+        const videoContainer = document.getElementById('video-container');
+        videoContainer.parentNode.removeChild(videoContainer);
+      }, 1000);
+      window.location = "index.html";
+    });
+  </script>
+</body>
+</html>
