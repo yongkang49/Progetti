@@ -5,6 +5,7 @@ body, html {
     padding: 0;
     overflow: hidden;
 }
+
 /*stile del logo*/
 .logo{
     position: absolute;
@@ -131,16 +132,7 @@ body, html {
     left: 20px;
 }
 
-.pity{
+.PITYcontainer img {
     display: inline-block; /*immagini in sequenza*/
     margin-right: 0; /*distanza tra le immagini*/
-    width: 160px;
-    height: auto;
-}
-
-.numbers{
-    display: inline-block; /*immagini in sequenza*/
-    margin-right: 0; /*distanza tra le immagini*/
-    width: 45px;
-    height: auto;
 }
